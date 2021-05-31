@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, All">
+    <meta name="keywords" content="Hexo学习, All">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | All</title>
+    <title>Hexo学习 | All</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Hexo学习</h1>
                 </div>
             </div>
         </div>
@@ -387,12 +387,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Hexo/" class="post-category">
+                                Hexo
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -410,14 +427,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    73
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    16 Min
                 </div>
                 
 
@@ -432,20 +449,147 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <h3 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h3><p>hexo s 在线预览</p>
+<p>hexo d 部署到GitHub</p>
+<p>hexo clean 清理public目录</p>
+<p>hexo g 生成静态网页</p>
+<h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><p>命令：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;模板&gt; &lt;文章名&gt;</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>有三个模板：post、draft、page</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>新建文章</td>
+<td>/source/_posts/</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>新建草稿</td>
+<td>/source/_drafts/</td>
+</tr>
+<tr>
+<td>page</td>
+<td>新建页面（标签页，分类页）</td>
+<td>/source/</td>
+</tr>
+</tbody></table>
+<p>通常情况下使用hexo new post <title> 即可，默认模板为post所以post也可以省略，这里的title不是文章名，只是文件名，文章的名称在文件里的Front-matter中可以修改。&lt;/p&gt;
+&lt;h3 id="Front-matter选项详解"&gt;&lt;a href="#Front-matter选项详解" class="headerlink" title="Front-matter选项详解"&gt;&lt;/a&gt;Front-matter选项详解&lt;/h3&gt;&lt;p&gt;其中所有选项内容都是非必填的，但是建议至少填写title和date的值&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;配置选项&lt;/th&gt;
+&lt;th&gt;默认值&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Markdown&lt;/code&gt; 的文件标题&lt;/td&gt;
+&lt;td&gt;文章标题，强烈建议填写此选项&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;date&lt;/td&gt;
+&lt;td&gt;文件创建时的日期时间&lt;/td&gt;
+&lt;td&gt;发布时间，强烈建议填写此选项，且最好保证全局唯一&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;author&lt;/td&gt;
+&lt;td&gt;根 &lt;code&gt;_config.yml&lt;/code&gt; 中的 &lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文章作者&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;img&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;featureImages&lt;/code&gt; 中的某个值&lt;/td&gt;
+&lt;td&gt;文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: &lt;code&gt;http://xxx.com/xxx.jpg&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;top&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;推荐文章（文章是否置顶），如果 &lt;code&gt;top&lt;/code&gt; 值为 &lt;code&gt;true&lt;/code&gt;，则会作为首页推荐文章&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hide&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;隐藏文章，如果&lt;code&gt;hide&lt;/code&gt;值为&lt;code&gt;true&lt;/code&gt;，则文章不会在首页显示&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cover&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;v1.0.2&lt;/code&gt;版本新增，表示该文章是否需要加入到首页轮播封面中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;coverImg&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;v1.0.2&lt;/code&gt;版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;password&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 &lt;code&gt;password&lt;/code&gt; 的值，该值必须是用 &lt;code&gt;SHA256&lt;/code&gt; 加密后的密码，防止被他人识破。前提是在主题的 &lt;code&gt;config.yml&lt;/code&gt; 中激活了 &lt;code&gt;verifyPassword&lt;/code&gt; 选项&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;toc&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 &lt;code&gt;config.yml&lt;/code&gt; 中激活了 &lt;code&gt;toc&lt;/code&gt; 选项&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mathjax&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;是否开启数学公式支持 ，本文章是否开启 &lt;code&gt;mathjax&lt;/code&gt;，且需要在主题的 &lt;code&gt;_config.yml&lt;/code&gt; 文件中也需要开启才行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;summary&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;categories&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tags&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;文章标签，一篇文章可以多个标签&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keywords&lt;/td&gt;
+&lt;td&gt;文章标题&lt;/td&gt;
+&lt;td&gt;文章关键字，SEO 时需要&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reprintPolicy&lt;/td&gt;
+&lt;td&gt;cc_by&lt;/td&gt;
+&lt;td&gt;文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果 &lt;code&gt;img&lt;/code&gt; 属性不填写的话，文章特色图会根据文章标题的 &lt;code&gt;hashcode&lt;/code&gt; 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章的特色图&lt;strong&gt;各有特色&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 &lt;code&gt;_config.yml&lt;/code&gt; 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：&lt;a href="http://tool.oschina.net/encrypt?type=2"&gt;开源中国在线工具&lt;/a&gt;、&lt;a href="http://encode.chahuo.com/"&gt;chahuo&lt;/a&gt;、&lt;a href="http://tool.chinaz.com/tools/hash.aspx"&gt;站长工具&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="最简示例"&gt;&lt;a href="#最简示例" class="headerlink" title="最简示例"&gt;&lt;/a&gt;最简示例&lt;/h3&gt;&lt;figure class="highlight plaintext"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre&gt;&lt;span class="line"&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="line"&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;title: typora-vue-theme主题介绍&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;date: 2018-09-07 09:25:00&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+&lt;h3 id="最全示例"&gt;&lt;a href="#最全示例" class="headerlink" title="最全示例"&gt;&lt;/a&gt;最全示例&lt;/h3&gt;&lt;figure class="highlight plaintext"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre&gt;&lt;span class="line"&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="line"&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;title: typora-vue-theme主题介绍&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;date: 2018-09-07 09:25:00&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;author: 赵奇&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;img: /source/images/xxx.jpg&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;top: true&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;hide: false&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;cover: true&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;coverImg: /images/1.jpg&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;toc: false&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;mathjax: false&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;categories: Markdown&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;tags:&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;  - Typora&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;  - Markdown&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+&lt;h3 id="修改主题颜色"&gt;&lt;a href="#修改主题颜色" class="headerlink" title="修改主题颜色"&gt;&lt;/a&gt;修改主题颜色&lt;/h3&gt;&lt;p&gt;在主题文件的 &lt;code&gt;/source/css/matery.css&lt;/code&gt; 文件中，搜索 &lt;code&gt;.bg-color&lt;/code&gt; 来修改背景颜色：&lt;/p&gt;
+&lt;figure class="highlight plaintext"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre&gt;&lt;span class="line"&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="line"&gt;/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;.bg-color {&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;@-webkit-keyframes rainbow {&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;   /* 动态切换背景颜色. */&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;@keyframes rainbow {&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;    /* 动态切换背景颜色. */&lt;/span&gt;&lt;br&gt;&lt;span class="line"&gt;}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+&lt;h3 id="修改-banner-图和文章特色图"&gt;&lt;a href="#修改-banner-图和文章特色图" class="headerlink" title="修改 banner 图和文章特色图"&gt;&lt;/a&gt;修改 banner 图和文章特色图&lt;/h3&gt;&lt;p&gt;你可以直接在 &lt;code&gt;/source/medias/banner&lt;/code&gt; 文件夹中更换你喜欢的 &lt;code&gt;banner&lt;/code&gt; 图片，主题代码中是每天动态切换一张，只需 &lt;code&gt;7&lt;/code&gt; 张即可。如果你会 &lt;code&gt;JavaScript&lt;/code&gt; 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，&lt;code&gt;banner&lt;/code&gt; 切换的代码位置在 &lt;code&gt;/layout/_partial/bg-cover-content.ejs&lt;/code&gt; 文件的 &lt;code&gt;&lt;script&gt;&lt;/script&gt;&lt;/code&gt; 代码中：&lt;/p&gt;
+&lt;figure class="highlight plaintext"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre&gt;&lt;span class="line"&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre&gt;&lt;span class="line"&gt;$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
+&lt;p&gt;在 &lt;code&gt;/source/medias/featureimages&lt;/code&gt; 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 &lt;code&gt;_config.yml&lt;/code&gt; 做同步修改。&lt;/p&gt;
+</title></p>
                 
             </div>
             <hr/>
@@ -471,7 +615,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weeping.xyz/2021/05/31/hello-world/">https://weeping.xyz/2021/05/31/hello-world/</a>
+                    <a href="https://weeping.xyz/2021/05/31/hellohexo/">https://weeping.xyz/2021/05/31/hellohexo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -508,7 +652,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -683,19 +835,19 @@
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2021/05/31/hello-world/">
+                <a href="/2021/05/31/hellohexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo学习">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Hexo学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            搭建好博客之后的第一篇文章
                         
                     </div>
                     <div class="publish-info">
@@ -704,13 +856,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Liulanglang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -721,19 +889,19 @@
                 Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/31/hello-world/">
+                <a href="/2021/05/31/hellohexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo学习">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Hexo学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            搭建好博客之后的第一篇文章
                         
                     </div>
                     <div class="publish-info">
@@ -742,13 +910,29 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Liulanglang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -896,7 +1080,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">73</span>
+                        class="white-color">3.2k</span>
             
             
             

@@ -1,1 +1,1 @@
-## 这是Liulanglang's博客的仓库
+## 这是Liulanglang的博客的仓库，博客链接：https://weeping.xyz
